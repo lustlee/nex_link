@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "email": "demo@user.com",
+      "password": "demo123",
+      "name": "Demo User",
+      "favorites": [
+        "l1"
+      ]
+    }
+  ],
+  "listings": [
+    {
+      "id": "l1",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft1.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 2,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l2",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt1.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1",
+      "listingId": "l1",
+      "userId": "u1",
+      "checkIn": "2025-10-20",
+      "checkOut": "2025-10-22",
+      "guests": 2,
+      "createdAt": "2025-10-10T10:00:00.000Z"
+    }
+  ]
+}
