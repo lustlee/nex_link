@@ -1,22 +1,33 @@
-import { useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { type FC, useState } from 'react';
 import { useListingDetails } from '../../features/listings/model/useListings.ts';
 import { BookingButton } from '../../shared/ui/BookingButton.tsx';
 import Carousel from '../../shared/ui/Carousel.tsx';
 import BookingDatePicker from '../../shared/ui/DatePicker.tsx';
+import { useAuthStore } from '../../store/useAuthStore.ts';
 
 const ListingDetailsPage: FC = () => {
 	const {id} = useParams<{ id: string }>();
 	const {data: listing, isLoading, isError} = useListingDetails(id);
+	const {isAuthenticated, token} = useAuthStore();
+	const navigate = useNavigate();
+	const location = useLocation();
 	
 	const [checkIn, setCheckIn] = useState<Date | null>(null);
 	const [checkOut, setCheckOut] = useState<Date | null>(null);
-	
 	
 	if (isLoading) return <p>Loading...</p>;
 	if (isError) return <p>Something went wrong</p>;
 	if (!listing) return <p>Listing not found</p>;
 	
+	const handleBooking = () => {
+		if (!checkIn || !checkOut) return;
+		
+		if (!isAuthenticated || !token) {
+			navigate('/login', {state: {from: location.pathname}});
+			return;
+		}
+	};
 	return (
 		<main className="px-6 md:px-10 py-10 max-w-6xl mx-auto">
 			<h1 className="text-3xl font-semibold mb-4">{ listing.title }</h1>
@@ -70,12 +81,11 @@ const ListingDetailsPage: FC = () => {
 					<BookingButton
 						checkIn={ checkIn }
 						checkOut={ checkOut }
-						onBook={ (data) => console.log('Booking:', data) }
+						onBook={ handleBooking }
 					/>
 				</div>
 			</section>
 		</main>
 	);
 };
-
 export default ListingDetailsPage;
