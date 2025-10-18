@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react';
 import type { FC } from 'react';
 import type { IListing } from '../model/types.ts';
+import { Link } from 'react-router-dom';
 
 interface Props {
 	listings: IListing[];
@@ -11,8 +12,9 @@ const Card: FC<Props> = ({listings}) => {
 	return (
 		<div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 			{ listings.map((listing: IListing) => (
-				<div
+				<Link
 					key={ listing.id }
+					to={ `/listings/${ listing.id }` }
 					className="bg-white rounded-2xl shadow-sm hover:shadow-md transition overflow-hidden"
 				>
 					<img
@@ -33,7 +35,7 @@ const Card: FC<Props> = ({listings}) => {
                   </span>
 						</div>
 					</div>
-				</div>
+				</Link>
 			)) }
 		</div>
 	);

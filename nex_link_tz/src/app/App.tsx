@@ -1,14 +1,20 @@
+import { Route, Routes } from 'react-router-dom';
 import Header from '../widgets/header/ui/Header.tsx';
-import ListCatalog from '../pages/list-catalog/ListCatalog.tsx';
-
+import ListingPage from '../pages/list-catalog/ListingPage.tsx';
+import ListingDetailsPage from '../pages/list-details/ListingDetailsPage.tsx';
 
 function App() {
 	
 	return (
-		<div>
+		<>
 			<Header/>
-			<ListCatalog/>
-		</div>
+			<main>
+				<Routes>
+					<Route path="/" element={ <ListingPage/> }/>
+					<Route path="/listings/:id" element={ <ListingDetailsPage/> }/>
+				</Routes>
+			</main>
+		</>
 	);
 }
 

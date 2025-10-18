@@ -1,0 +1,81 @@
+import { useParams } from 'react-router-dom';
+import { type FC, useState } from 'react';
+import { useListingDetails } from '../../features/listings/model/useListings.ts';
+import { BookingButton } from '../../shared/ui/BookingButton.tsx';
+import Carousel from '../../shared/ui/Carousel.tsx';
+import BookingDatePicker from '../../shared/ui/DatePicker.tsx';
+
+const ListingDetailsPage: FC = () => {
+	const {id} = useParams<{ id: string }>();
+	const {data: listing, isLoading, isError} = useListingDetails(id);
+	
+	const [checkIn, setCheckIn] = useState<Date | null>(null);
+	const [checkOut, setCheckOut] = useState<Date | null>(null);
+	
+	
+	if (isLoading) return <p>Loading...</p>;
+	if (isError) return <p>Something went wrong</p>;
+	if (!listing) return <p>Listing not found</p>;
+	
+	return (
+		<main className="px-6 md:px-10 py-10 max-w-6xl mx-auto">
+			<h1 className="text-3xl font-semibold mb-4">{ listing.title }</h1>
+			<p className="text-gray-600 mb-6">{ listing.city }</p>
+			
+			<Carousel images={ listing.photos }/>
+			
+			<section className="mt-8 grid md:grid-cols-3 gap-8">
+				<div className="md:col-span-2 space-y-6">
+					<div>
+						<h2 className="text-xl font-semibold mb-2">Описание</h2>
+						<p className="text-gray-700">{ listing.description }</p>
+					</div>
+					
+					<div>
+						<h2 className="text-xl font-semibold mb-2">Удобства</h2>
+						<ul className="grid grid-cols-2 gap-2">
+							{ listing.amenities.map((amenity: string) => (
+								<li key={ amenity } className="flex items-center gap-2">
+									<span>✅</span> { amenity }
+								</li>
+							)) }
+						</ul>
+					</div>
+					
+					<div>
+						<h2 className="text-xl font-semibold mb-2">Политика отмены</h2>
+						<p className="text-gray-700">{ listing.bookingsCount }</p>
+					</div>
+				</div>
+				
+				<div className="p-6 border rounded-2xl shadow-md h-fit sticky top-20">
+					<h2 className="text-lg font-semibold mb-4">Проверить доступность</h2>
+					
+					<div className="space-y-3">
+						<BookingDatePicker
+							label="Дата заезда"
+							selected={ checkIn }
+							onChange={ setCheckIn }
+						/>
+						
+						<div className="space-y-3">
+							<BookingDatePicker
+								label="Дата выезда"
+								selected={ checkOut }
+								onChange={ setCheckOut }
+							/>
+						</div>
+					</div>
+					
+					<BookingButton
+						checkIn={ checkIn }
+						checkOut={ checkOut }
+						onBook={ (data) => console.log('Booking:', data) }
+					/>
+				</div>
+			</section>
+		</main>
+	);
+};
+
+export default ListingDetailsPage;

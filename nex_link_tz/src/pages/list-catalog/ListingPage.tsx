@@ -5,7 +5,7 @@ import { Filters } from '../../widgets/filters/Filters.tsx';
 import { type FC } from 'react';
 
 
-const ListCatalog: FC = () => {
+const ListingPage: FC = () => {
 	const filtersStore = useFiltersStore();
 	const {data: listings, isLoading, isError} = useListings(filtersStore);
 	
@@ -52,4 +52,4 @@ const ListCatalog: FC = () => {
 	);
 };
 
-export default ListCatalog;
+export default ListingPage;
