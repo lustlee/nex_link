@@ -127,6 +127,21 @@ server.get('/listings', (req, res) => {
 	res.json(items);
 });
 
+server.get('/listings/:id', (req, res) => {
+	const db = router.db;
+	const { id } = req.params;
+	
+	const listing = db.get('listings').find({ id }).value();
+	
+	console.log(listing);
+	
+	if (!listing) {
+		return res.status(404).json({ message: 'Listing not found' });
+	}
+	
+	res.json(listing);
+});
+
 server.post('/bookings', (req, res) => {
 	const user = authUser(req);
 	if (!user) return res.status(401).json({ message: 'Unauthorized' });
