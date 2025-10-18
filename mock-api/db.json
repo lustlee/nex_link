@@ -46,6 +46,809 @@
       ],
       "bookingsCount": 0,
       "description": "Park view"
+    },
+    {
+      "id": "l3",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l4",
+      "title": "Green Apartment",
+      "city": "Tokmok",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt4.jpg",
+      "photos": [
+        "/img/apt4.jpg",
+        "/img/apt4.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l5",
+      "title": "Green Apartment",
+      "city": "Issyk-Kul",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt5.jpg",
+      "photos": [
+        "/img/apt5.jpg",
+        "/img/apt5.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l6",
+      "title": "Lakeside Cottage",
+      "city": "Issyk-Kul",
+      "pricePerNight": 80,
+      "rating": 4.7,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "BBQ"
+      ],
+      "bookingsCount": 1,
+      "description": "Peaceful lakeside stay"
+    },
+    {
+      "id": "l7",
+      "title": "Tiny House",
+      "city": "Tokmok",
+      "pricePerNight": 40,
+      "rating": 4.5,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 2,
+      "description": "Minimalist lifestyle"
+    },
+    {
+      "id": "l8",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l9",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l10",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft1.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 2,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l11",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt1.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l13",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l14",
+      "title": "Green Apartment",
+      "city": "Tokmok",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt4.jpg",
+      "photos": [
+        "/img/apt4.jpg",
+        "/img/apt4.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l15",
+      "title": "Green Apartment",
+      "city": "Issyk-Kul",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt5.jpg",
+      "photos": [
+        "/img/apt5.jpg",
+        "/img/apt5.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l16",
+      "title": "Lakeside Cottage",
+      "city": "Issyk-Kul",
+      "pricePerNight": 80,
+      "rating": 4.7,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "BBQ"
+      ],
+      "bookingsCount": 1,
+      "description": "Peaceful lakeside stay"
+    },
+    {
+      "id": "l17",
+      "title": "Tiny House",
+      "city": "Tokmok",
+      "pricePerNight": 40,
+      "rating": 4.5,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 2,
+      "description": "Minimalist lifestyle"
+    },
+    {
+      "id": "l18",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l19",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l20",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft1.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 2,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l21",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt1.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l22",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l23",
+      "title": "Green Apartment",
+      "city": "Tokmok",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt4.jpg",
+      "photos": [
+        "/img/apt4.jpg",
+        "/img/apt4.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l24",
+      "title": "Green Apartment",
+      "city": "Issyk-Kul",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt5.jpg",
+      "photos": [
+        "/img/apt5.jpg",
+        "/img/apt5.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l25",
+      "title": "Lakeside Cottage",
+      "city": "Issyk-Kul",
+      "pricePerNight": 80,
+      "rating": 4.7,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "BBQ"
+      ],
+      "bookingsCount": 1,
+      "description": "Peaceful lakeside stay"
+    },
+    {
+      "id": "l26",
+      "title": "Tiny House",
+      "city": "Tokmok",
+      "pricePerNight": 40,
+      "rating": 4.5,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 2,
+      "description": "Minimalist lifestyle"
+    },
+    {
+      "id": "l27",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l28",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l29",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft1.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 2,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l30",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt1.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l31",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l32",
+      "title": "Green Apartment",
+      "city": "Tokmok",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt4.jpg",
+      "photos": [
+        "/img/apt4.jpg",
+        "/img/apt4.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l33",
+      "title": "Green Apartment",
+      "city": "Issyk-Kul",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt5.jpg",
+      "photos": [
+        "/img/apt5.jpg",
+        "/img/apt5.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l34",
+      "title": "Lakeside Cottage",
+      "city": "Issyk-Kul",
+      "pricePerNight": 80,
+      "rating": 4.7,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "BBQ"
+      ],
+      "bookingsCount": 1,
+      "description": "Peaceful lakeside stay"
+    },
+    {
+      "id": "l35",
+      "title": "Tiny House",
+      "city": "Tokmok",
+      "pricePerNight": 40,
+      "rating": 4.5,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 2,
+      "description": "Minimalist lifestyle"
+    },
+    {
+      "id": "l36",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l37",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l38",
+      "title": "Cozy Loft",
+      "city": "Bishkek",
+      "pricePerNight": 35,
+      "rating": 4.6,
+      "thumbnailUrl": "/img/loft.jpg",
+      "photos": [
+        "/img/loft1.jpg",
+        "/img/loft2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC"
+      ],
+      "bookingsCount": 2,
+      "description": "Nice place near center"
+    },
+    {
+      "id": "l39",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt.jpg",
+      "photos": [
+        "/img/apt1.jpg",
+        "/img/apt2.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l40",
+      "title": "Green Apartment",
+      "city": "Osh",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l41",
+      "title": "Green Apartment",
+      "city": "Tokmok",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt4.jpg",
+      "photos": [
+        "/img/apt4.jpg",
+        "/img/apt4.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l42",
+      "title": "Green Apartment",
+      "city": "Issyk-Kul",
+      "pricePerNight": 55,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt5.jpg",
+      "photos": [
+        "/img/apt5.jpg",
+        "/img/apt5.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 0,
+      "description": "Park view"
+    },
+    {
+      "id": "l43",
+      "title": "Lakeside Cottage",
+      "city": "Issyk-Kul",
+      "pricePerNight": 80,
+      "rating": 4.7,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "BBQ"
+      ],
+      "bookingsCount": 1,
+      "description": "Peaceful lakeside stay"
+    },
+    {
+      "id": "l44",
+      "title": "Tiny House",
+      "city": "Tokmok",
+      "pricePerNight": 40,
+      "rating": 4.5,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "Parking"
+      ],
+      "bookingsCount": 2,
+      "description": "Minimalist lifestyle"
+    },
+    {
+      "id": "l45",
+      "title": "City Center Apartment",
+      "city": "Bishkek",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l46",
+      "title": "City Center Apartment",
+      "city": "Toktogul",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
+    },
+    {
+      "id": "l47",
+      "title": "City Center Apartment",
+      "city": "Toktogul",
+      "pricePerNight": 60,
+      "rating": 4.9,
+      "thumbnailUrl": "/img/apt3.jpg",
+      "photos": [
+        "/img/apt3.jpg",
+        "/img/apt3.jpg"
+      ],
+      "amenities": [
+        "WiFi",
+        "AC",
+        "Elevator"
+      ],
+      "bookingsCount": 4,
+      "description": "In the heart of the city"
     }
   ],
   "bookings": [

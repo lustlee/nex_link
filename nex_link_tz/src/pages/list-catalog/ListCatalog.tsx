@@ -1,23 +1,16 @@
-import { useState } from 'react';
 import { useListings } from '../../features/listings/model/useListings.ts';
 import ListingCard from '../../entities/listings/ui/ListingCard.tsx';
+import { useFiltersStore } from '../../features/filters/model/filtersStore.ts';
+import { Filters } from '../../widgets/filters/Filters.tsx';
+import { type FC } from 'react';
 
-const ListCatalog = () => {
-	const {data: listings, isLoading, isError} = useListings({
-		city: 'Bishkek',
-		minPrice: 10,
-		maxPrice: 100,
-		minRating: 4,
-		sort: 'price_asc',
-		page: 1,
-		limit: 20
-	});
-	const [sortBy, setSortBy] = useState<'pricePerNight' | 'rating'>('pricePerNight');
+
+const ListCatalog: FC = () => {
+	const filtersStore = useFiltersStore();
+	const {data: listings, isLoading, isError} = useListings(filtersStore);
 	
 	if (isLoading) return <p>Loading...</p>;
 	if (isError) return <p>Error loading listings</p>;
-	if (!listings?.length) return <p>No listings found</p>;
-	
 	
 	return (
 		<main className="px-6 md:px-10 py-10">
@@ -25,50 +18,35 @@ const ListCatalog = () => {
 				Discover your perfect stay
 			</h1>
 			
-			<div className="flex flex-wrap gap-3 mb-8">
-				{ ['City', 'Price range', 'Minimum rating'].map((filter) => (
-					<button
-						key={ filter }
-						className="px-4 py-2 border rounded-full text-sm bg-white hover:bg-gray-100"
-					>
-						{ filter }
-					</button>
-				)) }
+			<Filters/>
+			
+			<div className="flex justify-center items-center gap-3 mt-4">
+				<button
+					disabled={ filtersStore.page <= 1 }
+					onClick={ () => filtersStore.setFilters({page: filtersStore.page - 1}) }
+					className="px-3 py-1 border rounded disabled:opacity-50"
+				>
+					Назад
+				</button>
 				
-				<div className="flex items-center ml-auto space-x-2">
-					<span className="text-sm text-gray-600">Sort by:</span>
-					<div className="flex bg-gray-100 rounded-full p-1">
-						<button
-							onClick={ () => setSortBy('pricePerNight') }
-							className={ `px-3 py-1 rounded-full text-sm ${
-								sortBy === 'pricePerNight' ? 'bg-blue-500 text-white' : 'text-gray-600'
-							}` }
-						>
-							Price
-						</button>
-						<button
-							onClick={ () => setSortBy('rating') }
-							className={ `px-3 py-1 rounded-full text-sm ${
-								sortBy === 'rating'
-									? 'bg-blue-500 text-white'
-									: 'text-gray-600'
-							}` }
-						>
-							Rating
-						</button>
-					</div>
-				</div>
+				<span>Страница { filtersStore.page }</span>
+				
+				<button
+					disabled={ filtersStore.page >= 3 }
+					onClick={ () => filtersStore.setFilters({page: filtersStore.page + 1}) }
+					className="px-3 py-1 border rounded disabled:opacity-50"
+				>
+					Вперёд
+				</button>
 			</div>
 			
-			
-			{
-				listings && listings.length > 0 ? (
+			<div className="mt-8">
+				{ listings && listings.length > 0 ? (
 					<ListingCard listings={ listings }/>
 				) : (
-					<p>Sorry not have any information</p>
-				)
-			}
-		
+					<p>Sorry, no listings found</p>
+				) }
+			</div>
 		
 		</main>
 	);
