@@ -21,6 +21,7 @@ const LoginPage = () => {
 				onChange={ (e) => setEmail(e.target.value) }
 				required
 				className="border p-2 rounded"
+				autoFocus={ true }
 			/>
 			<input
 				type="password"
@@ -31,6 +32,7 @@ const LoginPage = () => {
 				className="border p-2 rounded"
 			/>
 			<button
+				aria-label="Войти"
 				type="submit"
 				disabled={ loginMutation.isPending }
 				className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"

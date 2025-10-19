@@ -3,11 +3,14 @@ import Header from '../widgets/header/ui/Header.tsx';
 import ListingPage from '../pages/list-catalog/ListingPage.tsx';
 import ListingDetailsPage from '../pages/list-details/ListingDetailsPage.tsx';
 import LoginPage from '../pages/login/LoginPage.tsx';
+import { GlobalProgress } from '../hooks/globalProgress.ts';
+import 'nprogress/nprogress.css';
 
 function App() {
 	
 	return (
 		<>
+			<GlobalProgress/>
 			<Header/>
 			<main>
 				<Routes>

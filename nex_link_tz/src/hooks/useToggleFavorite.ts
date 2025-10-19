@@ -13,7 +13,9 @@ export const useFavorites = () => {
 			const data = await getFavoritesApi();
 			setFavorites(data);
 			return data;
-		}
+		},
+		retry: 2,
+		retryDelay: attemptIndex => Math.min(1000 * 2 ** attemptIndex, 30000)
 	});
 	
 	const toggleFavoriteMutation = useMutation({

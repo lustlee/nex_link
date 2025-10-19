@@ -3,14 +3,30 @@ import ListingCard from '../../entities/listings/ui/ListingCard.tsx';
 import { useFiltersStore } from '../../features/filters/model/filtersStore.ts';
 import { Filters } from '../../widgets/filters/Filters.tsx';
 import { type FC } from 'react';
+import { RetryButton } from '../../widgets/button-retry/RetryButton.tsx';
 
 
 const ListingPage: FC = () => {
 	const filtersStore = useFiltersStore();
-	const {data: listings, isLoading, isError} = useListings(filtersStore);
+	const {
+		data: listings,
+		isLoading,
+		isError,
+		error,
+		refetch,
+		isFetching
+	} = useListings(filtersStore);
 	
 	if (isLoading) return <p>Loading...</p>;
-	if (isError) return <p>Error loading listings</p>;
+	
+	if (isError) return (
+		<div className="flex flex-col items-center justify-center mt-10 space-y-4">
+			<p className="text-red-500 font-medium">
+				Произошла ошибка: { (error as Error).message }
+			</p>
+			<RetryButton onClick={ () => refetch() } isLoading={ isFetching }/>
+		</div>
+	);
 	
 	return (
 		<main className="px-6 md:px-10 py-10">
@@ -39,6 +55,7 @@ const ListingPage: FC = () => {
 					Вперёд
 				</button>
 			</div>
+			
 			
 			<div className="mt-8">
 				{ listings && listings.length > 0 ? (

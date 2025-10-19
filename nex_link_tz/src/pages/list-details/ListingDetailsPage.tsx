@@ -8,10 +8,18 @@ import { useAuthStore } from '../../store/useAuthStore.ts';
 import { useCreateBooking } from '../../hooks/useBooking.ts';
 import { Heart, HeartCrack } from 'lucide-react';
 import { useFavorites } from '../../hooks/useToggleFavorite.ts';
+import { RetryButton } from '../../widgets/button-retry/RetryButton.tsx';
 
 const ListingDetailsPage: FC = () => {
 	const {id} = useParams<{ id: string }>();
-	const {data: listing, isLoading, isError} = useListingDetails(id);
+	const {
+		data: listing,
+		isLoading,
+		isError,
+		error,
+		refetch,
+		isFetching
+	} = useListingDetails(id);
 	const {isAuthenticated, token} = useAuthStore();
 	const navigate = useNavigate();
 	const location = useLocation();
@@ -25,7 +33,16 @@ const ListingDetailsPage: FC = () => {
 	const [checkOut, setCheckOut] = useState<Date | null>(null);
 	
 	if (isLoading) return <p>Loading...</p>;
-	if (isError) return <p>Something went wrong</p>;
+	
+	if (isError) return (
+		<div className="flex flex-col items-center justify-center mt-10 space-y-4">
+			<p className="text-red-500 font-medium">
+				Произошла ошибка: { (error as Error).message }
+			</p>
+			<RetryButton onClick={ () => refetch() } isLoading={ isFetching }/>
+		</div>
+	);
+	
 	if (!listing) return <p>Listing not found</p>;
 	
 	const handleBooking = () => {

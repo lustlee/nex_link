@@ -48,6 +48,7 @@ export const Filters: React.FC = () => {
 					value={ minPrice ?? '' }
 					onChange={ handleChange }
 					className="border p-2 rounded-lg w-28"
+					min={ 0 }
 				/>
 			</div>
 			
@@ -59,6 +60,7 @@ export const Filters: React.FC = () => {
 					value={ maxPrice ?? '' }
 					onChange={ handleChange }
 					className="border p-2 rounded-lg w-28"
+					min={ 0 }
 				/>
 			</div>
 			

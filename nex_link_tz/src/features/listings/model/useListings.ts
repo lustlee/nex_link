@@ -7,7 +7,9 @@ export const useListings = (filters?: Partial<FiltersState>) => {
 	return useQuery<IListing[], Error>({
 		queryKey: ['listings', filters],
 		queryFn: () => fetchListings(filters ?? {}),
-		placeholderData: (prev) => prev ?? []
+		placeholderData: (prev) => prev ?? [],
+		retry: 2,
+		retryDelay: attemptIndex => Math.min(1000 * 2 ** attemptIndex, 30000)
 	});
 };
 
@@ -15,6 +17,8 @@ export const useListingDetails = (id?: string) => {
 	return useQuery<IListing, Error>({
 		queryKey: ['listing', id],
 		enabled: !!id,
-		queryFn: () => fetchListingById(id!)
+		queryFn: () => fetchListingById(id!),
+		retry: 2,
+		retryDelay: attemptIndex => Math.min(1000 * 2 ** attemptIndex, 30000)
 	});
 };
