@@ -6,6 +6,8 @@ import Carousel from '../../shared/ui/Carousel.tsx';
 import BookingDatePicker from '../../shared/ui/DatePicker.tsx';
 import { useAuthStore } from '../../store/useAuthStore.ts';
 import { useCreateBooking } from '../../hooks/useBooking.ts';
+import { Heart, HeartCrack } from 'lucide-react';
+import { useFavorites } from '../../hooks/useToggleFavorite.ts';
 
 const ListingDetailsPage: FC = () => {
 	const {id} = useParams<{ id: string }>();
@@ -14,6 +16,10 @@ const ListingDetailsPage: FC = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
 	const bookingMutation = useCreateBooking();
+	const {favoritesQuery, toggleFavorite} = useFavorites();
+	const favorites = favoritesQuery.data || [];
+	const isFavorite = listing?.id ? favorites.includes(listing.id) : false;
+	
 	
 	const [checkIn, setCheckIn] = useState<Date | null>(null);
 	const [checkOut, setCheckOut] = useState<Date | null>(null);
@@ -39,8 +45,16 @@ const ListingDetailsPage: FC = () => {
 	};
 	return (
 		<main className="px-6 md:px-10 py-10 max-w-6xl mx-auto">
-			<h1 className="text-3xl font-semibold mb-4">{ listing.title }</h1>
-			<p className="text-gray-600 mb-6">{ listing.city }</p>
+			<div className="flex items-center justify-between mb-4">
+				<h1 className="text-3xl font-semibold">{ listing.title }</h1>
+				<button onClick={ () => listing?.id && toggleFavorite(listing.id) }>
+					{ isFavorite ? (
+						<HeartCrack className="text-red-500 w-6 h-6"/>
+					) : (
+						<Heart className="w-6 h-6"/>
+					) }
+				</button>
+			</div>
 			
 			<Carousel images={ listing.photos }/>
 			

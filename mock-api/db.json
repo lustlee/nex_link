@@ -6,7 +6,9 @@
       "password": "demo123",
       "name": "Demo User",
       "favorites": [
-        "l1"
+        "l3",
+        "l1",
+        "l14"
       ]
     }
   ],

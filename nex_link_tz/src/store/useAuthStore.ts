@@ -31,6 +31,9 @@ export const useAuthStore = create<AuthState>((set) => {
 		logout: () => {
 			localStorage.removeItem('token');
 			localStorage.removeItem('user');
+			
+			localStorage.removeItem('favorites-storage');
+			
 			set({token: null, user: null, isAuthenticated: false});
 		}
 	};
