@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../../store/useAuthStore.ts';
 
 const Header = () => {
@@ -15,7 +15,9 @@ const Header = () => {
 	return (
 		<header className="flex justify-between items-center px-6 py-4 border-b bg-white">
 			<div className="flex items-center space-x-2">
-				<div className="w-6 h-6 bg-blue-500 rounded"></div>
+				<Link to="/">
+					<div className="w-6 h-6 bg-blue-500 rounded"></div>
+				</Link>
 				<span className="font-semibold text-lg">StayFinder</span>
 			</div>
 			

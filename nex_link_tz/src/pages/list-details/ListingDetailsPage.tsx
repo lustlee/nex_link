@@ -5,6 +5,7 @@ import { BookingButton } from '../../shared/ui/BookingButton.tsx';
 import Carousel from '../../shared/ui/Carousel.tsx';
 import BookingDatePicker from '../../shared/ui/DatePicker.tsx';
 import { useAuthStore } from '../../store/useAuthStore.ts';
+import { useCreateBooking } from '../../hooks/useBooking.ts';
 
 const ListingDetailsPage: FC = () => {
 	const {id} = useParams<{ id: string }>();
@@ -12,6 +13,7 @@ const ListingDetailsPage: FC = () => {
 	const {isAuthenticated, token} = useAuthStore();
 	const navigate = useNavigate();
 	const location = useLocation();
+	const bookingMutation = useCreateBooking();
 	
 	const [checkIn, setCheckIn] = useState<Date | null>(null);
 	const [checkOut, setCheckOut] = useState<Date | null>(null);
@@ -27,6 +29,13 @@ const ListingDetailsPage: FC = () => {
 			navigate('/login', {state: {from: location.pathname}});
 			return;
 		}
+		
+		bookingMutation.mutate({
+			listingId: listing.id,
+			checkIn: checkIn.toISOString(),
+			checkOut: checkOut.toISOString(),
+			guests: 2
+		});
 	};
 	return (
 		<main className="px-6 md:px-10 py-10 max-w-6xl mx-auto">

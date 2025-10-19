@@ -44,7 +44,7 @@
         "WiFi",
         "Parking"
       ],
-      "bookingsCount": 0,
+      "bookingsCount": 2,
       "description": "Park view"
     },
     {
@@ -62,7 +62,7 @@
         "WiFi",
         "Parking"
       ],
-      "bookingsCount": 0,
+      "bookingsCount": 1,
       "description": "Park view"
     },
     {
@@ -98,7 +98,7 @@
         "WiFi",
         "Parking"
       ],
-      "bookingsCount": 0,
+      "bookingsCount": 1,
       "description": "Park view"
     },
     {
@@ -116,7 +116,7 @@
         "WiFi",
         "BBQ"
       ],
-      "bookingsCount": 1,
+      "bookingsCount": 2,
       "description": "Peaceful lakeside stay"
     },
     {
@@ -172,7 +172,7 @@
         "AC",
         "Elevator"
       ],
-      "bookingsCount": 4,
+      "bookingsCount": 5,
       "description": "In the heart of the city"
     },
     {
@@ -226,7 +226,7 @@
         "WiFi",
         "Parking"
       ],
-      "bookingsCount": 0,
+      "bookingsCount": 1,
       "description": "Park view"
     },
     {
@@ -262,7 +262,7 @@
         "WiFi",
         "Parking"
       ],
-      "bookingsCount": 0,
+      "bookingsCount": 1,
       "description": "Park view"
     },
     {
@@ -317,7 +317,7 @@
         "AC",
         "Elevator"
       ],
-      "bookingsCount": 4,
+      "bookingsCount": 7,
       "description": "In the heart of the city"
     },
     {
@@ -336,7 +336,7 @@
         "AC",
         "Elevator"
       ],
-      "bookingsCount": 4,
+      "bookingsCount": 5,
       "description": "In the heart of the city"
     },
     {
@@ -372,7 +372,7 @@
         "WiFi",
         "Parking"
       ],
-      "bookingsCount": 0,
+      "bookingsCount": 1,
       "description": "Park view"
     },
     {
@@ -444,7 +444,7 @@
         "WiFi",
         "BBQ"
       ],
-      "bookingsCount": 1,
+      "bookingsCount": 2,
       "description": "Peaceful lakeside stay"
     },
     {
@@ -608,7 +608,7 @@
         "WiFi",
         "BBQ"
       ],
-      "bookingsCount": 1,
+      "bookingsCount": 2,
       "description": "Peaceful lakeside stay"
     },
     {
@@ -860,6 +860,141 @@
       "checkOut": "2025-10-22",
       "guests": 2,
       "createdAt": "2025-10-10T10:00:00.000Z"
+    },
+    {
+      "id": "b_6704134c-3666-4f8f-a636-ffafcc4a9d5d",
+      "listingId": "l2",
+      "userId": "u1",
+      "checkIn": "2025-10-19",
+      "checkOut": "2025-10-24",
+      "guests": 2,
+      "createdAt": "2025-10-19T10:38:59.184Z"
+    },
+    {
+      "id": "b_845323a3-2bd8-4628-9019-781c711f5818",
+      "listingId": "l13",
+      "userId": "u1",
+      "checkIn": "2025-10-19T18:00:00.000Z",
+      "checkOut": "2025-10-24T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T10:57:23.767Z"
+    },
+    {
+      "id": "b_8cd0f090-b957-4f79-bfb1-099a7b0f9351",
+      "listingId": "l15",
+      "userId": "u1",
+      "checkIn": "2025-10-19T18:00:00.000Z",
+      "checkOut": "2025-10-23T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:08:01.545Z"
+    },
+    {
+      "id": "b_f87815de-cc21-49de-afd4-f97c54f592b4",
+      "listingId": "l21",
+      "userId": "u1",
+      "checkIn": "2025-10-19T18:00:00.000Z",
+      "checkOut": "2025-10-24T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:25:45.663Z"
+    },
+    {
+      "id": "b_176fe234-17c0-4d8b-8b59-05f7bc437e55",
+      "listingId": "l6",
+      "userId": "u1",
+      "checkIn": "2025-10-19T18:00:00.000Z",
+      "checkOut": "2025-10-22T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:30:24.962Z"
+    },
+    {
+      "id": "b_531d5f3b-4926-4dd5-94df-9229a7386886",
+      "listingId": "l34",
+      "userId": "u1",
+      "checkIn": "2025-10-20T18:00:00.000Z",
+      "checkOut": "2025-10-28T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:36:17.788Z"
+    },
+    {
+      "id": "b_0603202b-6418-4fb6-af26-2b1c9f0b621b",
+      "listingId": "l25",
+      "userId": "u1",
+      "checkIn": "2025-10-21T18:00:00.000Z",
+      "checkOut": "2025-10-24T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:41:33.984Z"
+    },
+    {
+      "id": "b_8e8e93b4-959b-4d9c-8bfa-a2d4c232cce0",
+      "listingId": "l5",
+      "userId": "u1",
+      "checkIn": "2025-10-19T18:00:00.000Z",
+      "checkOut": "2025-10-26T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:41:49.487Z"
+    },
+    {
+      "id": "b_ed9493fd-9d95-4180-a27a-5367fe8d568f",
+      "listingId": "l3",
+      "userId": "u1",
+      "checkIn": "2025-10-26T18:00:00.000Z",
+      "checkOut": "2025-10-27T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:52:55.934Z"
+    },
+    {
+      "id": "b_c765b587-d912-4955-9883-4ef11b5d55c0",
+      "listingId": "l2",
+      "userId": "u1",
+      "checkIn": "2025-09-30T18:00:00.000Z",
+      "checkOut": "2025-10-03T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T11:53:33.851Z"
+    },
+    {
+      "id": "b_5fc86ab1-cef3-4846-b920-e314229e45d8",
+      "listingId": "l19",
+      "userId": "u1",
+      "checkIn": "2025-10-07T18:00:00.000Z",
+      "checkOut": "2025-10-13T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T12:10:26.922Z"
+    },
+    {
+      "id": "b_0ccbb379-2253-41d5-8693-0e9bc944fce9",
+      "listingId": "l9",
+      "userId": "u1",
+      "checkIn": "2025-10-13T18:00:00.000Z",
+      "checkOut": "2025-10-15T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T12:22:54.073Z"
+    },
+    {
+      "id": "b_7a652681-0c91-4582-80d9-a3d9146c1ae0",
+      "listingId": "l18",
+      "userId": "u1",
+      "checkIn": "2025-10-02T18:00:00.000Z",
+      "checkOut": "2025-10-05T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T12:23:12.089Z"
+    },
+    {
+      "id": "b_caa04dc3-a866-4fa0-ae5a-b832006baf47",
+      "listingId": "l18",
+      "userId": "u1",
+      "checkIn": "2025-10-08T18:00:00.000Z",
+      "checkOut": "2025-10-12T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T12:23:22.414Z"
+    },
+    {
+      "id": "b_738f43e6-25ce-40ed-aaf4-5e6635254661",
+      "listingId": "l18",
+      "userId": "u1",
+      "checkIn": "2025-11-19T18:00:00.000Z",
+      "checkOut": "2025-11-23T18:00:00.000Z",
+      "guests": 2,
+      "createdAt": "2025-10-19T12:27:29.804Z"
     }
   ]
 }

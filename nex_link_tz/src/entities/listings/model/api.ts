@@ -8,6 +8,5 @@ export const fetchListings = async (filters: Partial<FiltersData>): Promise<ILis
 
 export const fetchListingById = async (id: string): Promise<IListing> => {
 	const {data} = await api.get<IListing>(`/listings/${ id }`);
-	console.log(data);
 	return data;
 };

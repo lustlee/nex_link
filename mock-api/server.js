@@ -133,8 +133,6 @@ server.get('/listings/:id', (req, res) => {
 	
 	const listing = db.get('listings').find({ id }).value();
 	
-	console.log(listing);
-	
 	if (!listing) {
 		return res.status(404).json({ message: 'Listing not found' });
 	}
